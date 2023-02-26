@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medLine</title>
+    <!-- style 
+        include ../styles/style.css -->
+</head>
+<body>
+    <nav>
+        <div class="left-part">
+            <img class="logoImg" src="../assets/logo.jpeg" height="60px" width="70px">
+        </div>
+        <div class="right-part">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a onclick="findDoctor()">Find Doctors</a></li>
+                <li><a href="/chat">Chat</a></li>
+                <li><a href="/about">About</a></li>
+                <li class="login" onmouseover="logins()"><a href="/login">Login</a></li>
+                <li class="signup"><a href="/signup">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <modal>
+        <form action="./doctorlist.html" class="dropdownMain">
+            <!-- <label for="languages">Language</label> -->
+            <select name="languages" class="lang">
+              <option value="Patiala">Patiala</option>
+              <option value="Rajpura">Rajpura</option>
+              <option value="Ropar">Ropar</option>
+              <option value="Jalandhar">Jalandhar</option>
+              <option value="Mohali">Mohali</option>
+            </select>
+            <!-- <label for="class">Specialty</label> -->
+            <select name="class"  class="class">
+                <option value="Dentist">Dentist</option>
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="general-physician">General Physician</option>
+                <option value="dermatologist">Dermatologist</option>
+                <option value="ENT">ENT</option>
+                <option value="Psycologist">Psycologist</option>
+                <option value="Homeopath">Homeopath</option>
+              </select>
+            <input type="submit" value="Search" class="searchbutt"/>
+      </form>
+    </modal>
+    {{{body}}}
+    {{!-- <section class="top-section">
+        <div class="containerMain">
+            <div class="right">
+                <h2>The Complete Healthcare Solution</h2>
+                <p class="landingMain">More than 100 trusted doctors are here for you</p>
+                <button class="getStartedbutton">Get Started</button>
+            </div>
+            <div class="leftMain">
+                <div class="doctorImg">.</div>
+            </div>
+        </div>
+    </section>
+    <section class="bottomSection">
+        <div class="bottomSectionContainer">
+            <div class="box">Cold, Cough or Fever</div>
+            <div class="box" style="background-image: url('https://img.freepik.com/premium-photo/people-healthcare-health-problem-concept-unhappy-man-suffering-from-stomach-ache-white-background_264197-4975.jpg');">Stomachache</div>
+            <div class="box" style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwndeuyDpQln4uYoA2sbU2VKgkvDSi7P1hPA&usqp=CAU);">Breathing Issues</div>
+            <div class="box" style>Blood Pressure</div>
+            <div class="box">Insomnia</div>
+            <div class="box">Sugar Levels</div>
+
+        </div>
+        <div class="bottomestSectionContainer">
+            <div class="leftbottomest">
+                <h2>Consult Top Doctors Online</h2>
+            </div>
+            <div class="rightbottomest">
+                <p>Doctors across 35+ specialties</p>
+                <p>Find Doctors according to your desired prefernces</p>
+                <p>Start Consulting!</p>
+            </div>
+            
+        </div>
+        <div class="bottomestestSectionContainer">
+            <div class="leftbottomest">
+                <h2>Book Lab Test and Health Checks</h2>
+            </div>
+            <div class="rightbottomest">
+                <p>NABL - accredited labs for accurate results  </p>
+                <p>Online lab report results 4 hours</p>
+                <p>Lab Reports done by experts</p>
+            </div>
+            
+            
+        </div>
+        <div class="bottomestx4SectionContainer">
+            <div class="leftbottomest">
+                <h2>Online ChatBot</h2>
+            </div>
+            <div class="rightbottomest">
+                <p>24/7 chatbot powered by ChatGPT API</p>
+                <p>AI powered Medical Assistance</p>
+                <p></p>
+            </div>
+        </div>
+    </section> --}}
+    <footer>
+        Founded by Team carlX &copy; All Rights Reserved 2023
+    </footer>
+    <script src="../main.js"></script>
+</body>
+</html>

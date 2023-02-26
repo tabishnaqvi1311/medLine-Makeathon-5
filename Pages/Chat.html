@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medLine</title>
+    <!-- style 
+        include ../styles/style.css -->
+</head>
+<body>
+    <nav>
+        <div class="left-part">
+            <img class="logoImg" src="../assets/logo.jpeg" height="60px" width="70px">
+        </div>
+        <div class="right-part">
+            <ul>
+                <li><a href="./LandingPage.html">Home</a></li>
+                <li><a onclick="findDoctor()">Find Doctors</a></li>
+                <li><a href="./Medicine.html"></a></li>
+                <li><a href="/chat">Chat</a></li>
+                <li><a href="/about">About</a></li>
+                <li class="login" onmouseover="logins()"><a href="./login.html">Login</a></li>
+                <li class="signup"><a href="./signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <modal>
+        <form action="./doctorlistPatialaden.html" class="dropdownMain" id="dropdownMain">
+            <label for="languages">Language</label>
+            <select name="languages" class="lang">
+              <option value="Patiala">Patiala</option>
+              <option value="Rajpura">Rajpura</option>
+              <option value="Ropar">Ropar</option>
+              <option value="Jalandhar">Jalandhar</option>
+              <option value="Mohali">Mohali</option>
+            </select>
+            <label for="class">Specialty</label>
+            <select name="class"  class="class">
+                <option value="Dentist">Dentist</option>
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="general-physician">General Physician</option>
+                <option value="dermatologist">Dermatologist</option>
+                <option value="ENT">ENT</option>
+                <option value="Psycologist">Psycologist</option>
+                <option value="Homeopath">Homeopath</option>
+            </select>
+            <button class="searchbutt" onclick="linker()">Search</button>
+      </form>
+    </modal>
+    <div class="mainChatWrap">
+        <div class="right-adder">
+            + New Chat
+        </div>
+        <div class="chatArea">
+            <div class="MainChatArea" id="MainChatArea">
+                Main
+            </div>
+            <div class="chatForm">
+                <form>
+                    <input type="text" name="chatInp" placeholder="Ask..." class="chatput" id="setVal" required>
+                    <button type="submit" onclick="GPT()">></button>
+                </form>                
+            </div>
+        </div>
+    </div>
+    <footer>
+        Founded by Team carlX &copy All Rights Reserved 2023;
+    </footer>
+    <script src="../main.js"></script>
+</body>
+</html>
