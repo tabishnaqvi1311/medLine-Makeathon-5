@@ -18,3 +18,13 @@ async function GPT(){
 }
 
 
+const findDoctor = () => {
+  const cal = document.querySelector('form');
+  if(cal.style.display == 'none'){
+    cal.style.display = 'flex'
+  }
+  else{
+    cal.style.display = 'none'
+  }
+}
+
