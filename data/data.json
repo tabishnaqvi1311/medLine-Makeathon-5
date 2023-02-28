@@ -1,0 +1,23 @@
+{
+    "dentists": [
+      {
+        "name": "Dr. John Doe",
+        "specialty": "Orthodontist",
+        "location": "123 Main Street",
+        "phone": "555-555-1212"
+      },
+      {
+        "name": "Dr. Jane Smith",
+        "specialty": "Pediatric Dentist",
+        "location": "456 Elm Street",
+        "phone": "555-555-1313"
+      },
+      {
+        "name": "Dr. Bob Johnson",
+        "specialty": "Periodontist",
+        "location": "789 Oak Street",
+        "phone": "555-555-1414"
+      }
+    ]
+  }
+  
